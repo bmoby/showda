@@ -86,3 +86,6 @@ export default function Navigation() {
     </header>
   );
 }
+
+// versiya 2
+// versiya 2 ++
