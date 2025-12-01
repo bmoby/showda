@@ -1,0 +1,45 @@
+.page {
+  padding: 0 1.25rem 2.5rem;
+}
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.sectionContent {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.sectionKicker {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.leadText {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 0 0.9rem 2rem;
+  }
+
+  .sectionContent {
+    padding: 0 0.9rem;
+  }
+}

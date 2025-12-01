@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Главная — Проверенные ИИ-новости</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Перейти к основному контенту</a>
+
+    <!-- Раздел: шапка сайта с логотипом, меню и поиском -->
+    <header class="site-header" role="banner">
+      <div class="content-wrapper header-layout">
+        <!-- Подраздел: логотип и кнопка мобильного меню -->
+        <div class="header-top">
+          <div class="brand">ИИ-N</div>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+          >
+            Меню
+          </button>
+        </div>
+
+        <nav class="primary-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Обзоры</a></li>
+            <li><a href="#">Гайды</a></li>
+            <li><a href="#">Аналитика</a></li>
+            <li><a href="#">Novaya stranica</a></li>
+          </ul>
+        </nav>
+
+        <form class="header-search" role="search">
+          <label for="header-search">Поиск по статьям</label>
+          <div class="search-fields">
+            <input
+              id="header-search"
+              type="search"
+              name="q"
+              placeholder="Поиск по статьям…"
+            />
+            <button type="submit">Найти</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <!-- Конец раздела с шапкой сайта -->
+
+    <!-- Раздел: модальное меню для мобильной навигации -->
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="mobile-menu-title"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__overlay" data-close-menu></div>
+      <div class="mobile-menu__panel">
+        <div class="mobile-menu__header">
+          <h2 id="mobile-menu-title">Навигация по разделам</h2>
+          <button class="mobile-menu__close" type="button">Закрыть меню</button>
+        </div>
+        <nav class="mobile-nav" aria-label="Навигация по сайту">
+          <ul>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Обзоры</a></li>
+            <li><a href="#">Гайды</a></li>
+            <li><a href="#">Аналитика</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Конец раздела с модальным меню -->
+
+    <main id="main-content">
+      <!-- Раздел: герой-блок со слоганом и объяснением проекта -->
+      <section class="page-section hero" aria-labelledby="hero-title">
+        <div class="content-wrapper">
+          <p class="section-kicker">Миссия проекта</p>
+          <h1 id="hero-title">
+            Только проверенные ИИ-новинки. Мы тестируем – вы узнаёте правду.
+          </h1>
+          <p class="lead-text">
+            Публикуем новости и обзоры без хайпа – с фактами, источниками и
+            честными выводами. Здесь вы быстро понимаете, что в ИИ действительно
+            работает, а что — просто маркетинг.
+          </p>
+          <p class="muted-text">
+            На главной — свежие новости и обзоры, рекомендованные материалы и
+            удобная навигация по разделам.
+          </p>
+        </div>
+      </section>
+      <!-- Конец раздела с вступительным блоком -->
+
+      <!-- Раздел: свежая лента новостей и обзоров -->
+      <section class="page-section" aria-labelledby="updates-title">
+        <div class="content-wrapper">
+          <header class="section-heading">
+            <h2 id="updates-title">Последние обновления</h2>
+            <p>
+              Живой поток свежих материалов: последние новости ИИ и честные
+              обзоры инструментов.
+            </p>
+          </header>
+
+          <div class="grid-two-columns">
+            <section aria-labelledby="news-title">
+              <h3 id="news-title">Последние новости ИИ</h3>
+              <p class="muted-text">
+                Обновляем ленту по мере выхода важных новостей. Даты у каждой
+                статьи подчёркивают актуальность.
+              </p>
+
+              <ul class="content-list">
+                <li class="content-card">
+                  <p class="content-meta">14 ноября 2025</p>
+                  <h4>
+                    <a class="content-link" href="#">
+                      Крупное обновление генеративной модели от крупного вендора
+                    </a>
+                  </h4>
+                  <p>
+                    Разбираем, что на самом деле изменилось в новой версии:
+                    качество ответов, безопасность, ограничения и реальная
+                    польза для пользователей.
+                  </p>
+                </li>
+                <li class="content-card">
+                  <p class="content-meta">13 ноября 2025</p>
+                  <h4>
+                    <a class="content-link" href="#">
+                      Регуляторы выпустили новые рекомендации по использованию
+                      ИИ
+                    </a>
+                  </h4>
+                  <p>
+                    Кратко и по делу: что важно знать продуктовым командам и
+                    исследователям, чтобы не столкнуться с юридическими рисками.
+                  </p>
+                </li>
+                <li class="content-card">
+                  <p class="content-meta">12 ноября 2025</p>
+                  <h4>
+                    <a class="content-link" href="#">
+                      Новый сервис для генерации изображений: тестируем качества
+                      и ограничения
+                    </a>
+                  </h4>
+                  <p>
+                    Показываем реальные примеры, сравниваем с альтернативами и
+                    честно рассказываем, где инструмент проваливается.
+                  </p>
+                </li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="reviews-title">
+              <h3 id="reviews-title">Новые обзоры</h3>
+              <p class="muted-text">
+                Детальные разборы ИИ-продуктов: сценарии использования,
+                ограничения и кому инструмент действительно полезен.
+              </p>
+
+              <ul class="content-list">
+                <li class="content-card">
+                  <p class="content-meta">Обзор · 10 минут чтения</p>
+                  <h4>
+                    <a class="content-link" href="#">
+                      Обзор ИИ-ассистента для программистов: стоит ли подключать
+                      команду?
+                    </a>
+                  </h4>
+                  <p>
+                    Мы проверили, как ассистент ведёт себя в реальных задачах:
+                    рефакторинг, поиск багов, помощь джунам и экономия времени
+                    сеньоров.
+                  </p>
+                </li>
+                <li class="content-card">
+                  <p class="content-meta">Обзор · 7 минут чтения</p>
+                  <h4>
+                    <a class="content-link" href="#">
+                      Генератор текстов для маркетинга: честный тест без
+                      промо-хайпа
+                    </a>
+                  </h4>
+                  <p>
+                    Проверяем качество текстов, уникальность, удобство
+                    интерфейса и насколько сервис помогает маркетинг-командам в
+                    повседневной работе.
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Конец раздела со свежими новостями -->
+
+      <!-- Раздел: рекомендуемые и популярные материалы -->
+      <section class="page-section" aria-labelledby="featured-title">
+        <div class="content-wrapper">
+          <header class="section-heading">
+            <h2 id="featured-title">Рекомендуем и популярное</h2>
+            <p>
+              Выделяем обзоры и статьи, которые наша команда оценила особенно
+              высоко, а также материалы, набравшие много внимания у читателей.
+            </p>
+          </header>
+
+          <div class="featured-layout">
+            <article class="highlight-panel" aria-labelledby="highlight-title">
+              <p class="section-kicker">Протестировано командой</p>
+              <h3 id="highlight-title">
+                Глубокий обзор инновационного ИИ-продукта: сильные и слабые
+                стороны без маркетинга
+              </h3>
+              <p>
+                Мы тщательно протестировали продукт на реальных сценариях: от
+                рабочих задач до граничных кейсов. В обзоре — честный разбор
+                возможностей, ограничений и того, кому инструмент действительно
+                имеет смысл внедрять.
+              </p>
+              <p>
+                В тексте вы найдёте метрики, примеры запросов и ответы,
+                сравнение с конкурентами и отдельно отмеченные риски.
+              </p>
+              <a class="content-link" href="#">Читать подробный обзор</a>
+            </article>
+
+            <aside class="popular-list" aria-label="Популярные материалы">
+              <h3>Популярное среди читателей</h3>
+              <ul>
+                <li>
+                  <p class="popular-title">
+                    7 ошибок при внедрении ИИ-инструментов в компании
+                  </p>
+                  <p class="popular-meta">
+                    Аналитика · часто сохраняют в закладки
+                  </p>
+                </li>
+                <li>
+                  <p class="popular-title">
+                    Как оценить качество ответа от модели: практическое
+                    руководство
+                  </p>
+                  <p class="popular-meta">
+                    Гайд · подходит продукт-менеджерам и разработчикам
+                  </p>
+                </li>
+                <li>
+                  <p class="popular-title">
+                    Подборка инструментов для продвинутой работы с текстом и
+                    кодом
+                  </p>
+                  <p class="popular-meta">
+                    Справочник · обновляется по мере выхода новых сервисов
+                  </p>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <!-- Конец раздела с рекомендациями -->
+
+      <!-- Раздел: карта разделов и расширенный поиск -->
+      <section class="page-section" aria-labelledby="navigation-title">
+        <div class="content-wrapper">
+          <header class="section-heading">
+            <h2 id="navigation-title">Разделы сайта и быстрый поиск</h2>
+            <p>
+              Видите структуру ресурса прямо с главной: выберите нужный раздел
+              или сразу найдите конкретный запрос через поиск.
+            </p>
+          </header>
+
+          <div class="navigation-layout">
+            <nav aria-label="Разделы материалов">
+              <ul class="navigation-cards">
+                <li class="navigation-card">
+                  <h3>Новости</h3>
+                  <p>
+                    Последние события в мире ИИ без лишнего шума: кратко, с
+                    проверенными источниками и ссылками на оригинальные
+                    исследования.
+                  </p>
+                </li>
+                <li class="navigation-card">
+                  <h3>Обзоры</h3>
+                  <p>
+                    Честные разборы ИИ-инструментов: от возможностей и цены до
+                    реальной пользы в ежедневной работе.
+                  </p>
+                </li>
+                <li class="navigation-card">
+                  <h3>Гайды</h3>
+                  <p>
+                    Пошаговые инструкции и практические руководства по работе с
+                    моделями, сервисами и инструментами для бизнеса и
+                    разработчиков.
+                  </p>
+                </li>
+                <li class="navigation-card">
+                  <h3>Аналитика</h3>
+                  <p>
+                    Глубокие статьи и разборы тенденций, влияния ИИ на
+                    индустрии, рынок и процессы внутри компаний.
+                  </p>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="search-panel">
+              <form role="search">
+                <label for="home-search">Поиск по статьям</label>
+                <input
+                  id="home-search"
+                  type="search"
+                  name="q"
+                  placeholder="Например: «обзор GPT-модели для кода»"
+                />
+                <button type="submit">Найти</button>
+                <p class="form-help">
+                  Можно искать по названию продукта, типу задачи или ключевым
+                  словам: «инструменты для аналитиков», «модели для локального
+                  развёртывания» и т.п.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Конец раздела с навигацией и поиском -->
+    </main>
+
+    <!-- Раздел: подвал проекта со служебными ссылками -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="content-wrapper footer-layout">
+        <p>
+          © Проект проверенных ИИ-новостей. Актуальные и честные материалы об
+          искусственном интеллекте.
+        </p>
+        <nav class="footer-links" aria-label="Служебные ссылки">
+          <ul>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Редполитика</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- Конец раздела с подвалом -->
+
+    <!-- Подключение скрипта для мобильного меню -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

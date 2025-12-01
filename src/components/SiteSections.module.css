@@ -1,0 +1,62 @@
+.section {
+  padding: 2.5rem 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 1.25rem;
+}
+
+.header {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.text {
+  margin: 0;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cardList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.1rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.searchPanel {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+}
