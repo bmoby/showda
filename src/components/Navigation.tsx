@@ -89,5 +89,3 @@ export default function Navigation() {
 
 // versiya 2
 // versiya 2 ++
-
-// versiya 3
